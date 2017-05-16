@@ -9,7 +9,6 @@
         <title>Mega Roster</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css">
         <link rel="stylesheet" href="roster.css">
     </head>
     <body>
@@ -18,15 +17,19 @@
             <div>
                 <form>
                     <p>
-                        <label for="personName">Enter new name:</label>
+                        <label for="personName">Enter name:</label>
                         <input type="text" name = "personName">
                     </p>
-
+                    <p>
+                        <button type="submit">Add</button>
+                    </p>
                 </form>
-
             </div>
 
-
+            <div class="list">
+                <ul id="ulList">
+                </ul>
+            </div>
         </section>
         <script src="roster.js"></script>
     </body>
