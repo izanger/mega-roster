@@ -18,11 +18,16 @@ const megaroster = {
             name: form.studentName.value,
             id: ++this.max,
         }
-        megaroster.students.push(student)
+        megaroster.students.unshift(student)
         const listItem = this.buildListItem(student)
-        this.studentList.insertBefore(listItem, this.studentList.firstChild)
+
+        this.prependChild(this.studentList, listItem)
         this.buildListItem(student)
         form.reset()
+    },
+
+    prependChild(parent, child){
+        parent.insertBefore(child, parent.firstChild)
     },
 
     buildListItem(student) {
