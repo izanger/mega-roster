@@ -20,8 +20,9 @@ const megaroster = {
         }
         megaroster.students.push(student)
         const listItem = this.buildListItem(student)
-        this.studentList.appendChild(listItem)
+        this.studentList.insertBefore(listItem, this.studentList.firstChild)
         this.buildListItem(student)
+        form.reset()
     },
 
     buildListItem(student) {
