@@ -19,7 +19,6 @@ const handleSubmit = (ev) => {
         listing.style.width = listing.textContent.length * 8 + "px"
         listing.style.borderStyle = "solid"
         listing.style.fontWeight = "bold"
-        bolded = 1;
     })
 
     //delete button
